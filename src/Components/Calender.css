@@ -1,0 +1,150 @@
+#calender{
+    display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper {
+    width: 450px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  
+  header .icons {
+    display: flex;
+  }
+  
+  header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #505050;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  
+  .icons span:last-child {
+    margin-right: -10px;
+  }
+  
+  header .icons span:hover {
+    background: #f2f2f2;
+  }
+  
+  header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: #fb3b01;
+  }
+  
+  .calendar {
+    padding: 20px;
+  }
+  
+  .calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .calendar .weeks {
+    margin-bottom: 20px;
+  }
+  
+  .calendar li {
+    color: #ffffff;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  
+  .calendar .weeks li {
+    font-weight: 500;
+    color: #00ffb3;
+    cursor: default;
+  }
+  
+  .calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .days li.inactive {
+    color: #fb6d0154;
+  }
+  
+  .days li.active {
+    color: #fff;
+  }
+  
+  .days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .days li.active::before {
+    background: #00ffb3;
+  }
+  
+  .days li:not(.active):hover::before {
+    background: #f2f2f2;
+  }
+  
+  .note-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+  }
+  
+  .note-section h3 {
+    color: #fb3b01;
+    margin-bottom: 10px;
+  }
+  
+  .note-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .note-section button {
+    padding: 10px 15px;
+    background-color: #00ffb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .note-section button:hover {
+    background-color: #00e6b8;
+  }
+  

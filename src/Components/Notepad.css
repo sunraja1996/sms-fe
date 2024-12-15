@@ -1,0 +1,50 @@
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #444;
+  }
+  
+  textarea {
+    width: 100%;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .saved-notes {
+    margin-top: 30px;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list-group-item button {
+    font-size: 14px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
